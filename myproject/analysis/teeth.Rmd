@@ -1,0 +1,29 @@
+---
+title: "teeth"
+author: "Honorine Destain"
+date: "2020-09-15"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+
+```{r import-teeth}
+teeth <- read.csv("data/teeth.csv", row.names = 1)
+head(teeth)
+```
+
+```{r boxplots}
+boxplot(len ~ dose, data = teeth)
+boxplot(len ~ supp, data = teeth)
+boxplot(len ~ dose + supp, data = teeth)
+```
+
+```{r permute}
+mean(teeth$len[teeth$supp == "OJ"]) - mean(teeth$len[teeth$supp == "VC"])
+supp_perm <- sample(teeth$supp)
+mean(teeth$len[supp_perm == "OJ"]) - mean(teeth$len[supp_perm == "VC"])
+```
+
+

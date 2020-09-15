@@ -496,16 +496,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong334468e"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> 334468e </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongbaaa2ca"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> baaa2ca </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong334468e" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongbaaa2ca" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 334468e. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version baaa2ca. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -513,11 +513,24 @@ Note that you need to be careful to ensure that all relevant files for the analy
 <pre><code>
 Ignored files:
     Ignored:    .DS_Store
+    Ignored:    Bootcamp R Files/.DS_Store
+    Ignored:    Bootcamp R Files/.Rhistory
     Ignored:    R Files/
 
 Untracked files:
     Untracked:  .localized
-    Untracked:  Bootcamp R Files/
+    Untracked:  Bootcamp R Files/BSD-QBio6/
+    Untracked:  Bootcamp R Files/Bootcamp pt 1.R
+    Untracked:  Bootcamp R Files/Reproducible research with workflowr.Rmd
+    Untracked:  Bootcamp R Files/Reproducible-research-with-workflowr.html
+    Untracked:  Bootcamp R Files/laptops.csv
+    Untracked:  Bootcamp R Files/workflowr attempt/Desktop.Rproj
+    Untracked:  Bootcamp R Files/workflowr attempt/README.md
+    Untracked:  Bootcamp R Files/workflowr attempt/_workflowr.yml
+    Untracked:  Bootcamp R Files/workflowr attempt/analysis/
+    Untracked:  Bootcamp R Files/workflowr attempt/code/
+    Untracked:  Bootcamp R Files/workflowr attempt/data/
+    Untracked:  Bootcamp R Files/workflowr attempt/output/
     Untracked:  Data Science in Python/
     Untracked:  IDLE
     Untracked:  ImageJ.app/
@@ -573,9 +586,52 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in th
 <hr>
 </div>
 <div id="versions" class="tab-pane fade">
+
 <p>
-There are no past versions. Publish this analysis with <code>wflow_publish()</code> to start tracking its development.
+These are the previous versions of the repository in which changes were made to the R Markdown (<code>Bootcamp R Files/workflowr attempt/analysis/teeth.Rmd</code>) and HTML (<code>Bootcamp R Files/workflowr attempt/docs/teeth.html</code>) files. If you've configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view the files as they were in that past version.
 </p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+baaa2ca
+</td>
+<td>
+Honorine Destain
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+Build site.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr>
 </div>
 </div>
@@ -593,10 +649,121 @@ head(teeth)</code></pre>
 6 10.0   VC  0.5</code></pre>
 <pre class="r"><code>boxplot(len ~ dose, data = teeth)</code></pre>
 <p><img src="figure/teeth.Rmd/boxplots-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-boxplots-1">
+Past versions of boxplots-1.png
+</button>
+</p>
+<div id="fig-boxplots-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+baaa2ca
+</td>
+<td>
+Honorine Destain
+</td>
+<td>
+2020-09-15
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>boxplot(len ~ supp, data = teeth)</code></pre>
 <p><img src="figure/teeth.Rmd/boxplots-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-boxplots-2">
+Past versions of boxplots-2.png
+</button>
+</p>
+<div id="fig-boxplots-2" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+baaa2ca
+</td>
+<td>
+Honorine Destain
+</td>
+<td>
+2020-09-15
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>boxplot(len ~ dose + supp, data = teeth)</code></pre>
 <p><img src="figure/teeth.Rmd/boxplots-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-boxplots-3">
+Past versions of boxplots-3.png
+</button>
+</p>
+<div id="fig-boxplots-3" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+baaa2ca
+</td>
+<td>
+Honorine Destain
+</td>
+<td>
+2020-09-15
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>mean(teeth$len[teeth$supp == &quot;OJ&quot;]) - mean(teeth$len[teeth$supp == &quot;VC&quot;])</code></pre>
 <pre><code>[1] 3.7</code></pre>
 <pre class="r"><code>supp_perm &lt;- sample(teeth$supp)
@@ -625,14 +792,15 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.5      rstudioapi_0.11 knitr_1.29      magrittr_1.5   
- [5] workflowr_1.6.2 R6_2.4.1        rlang_0.4.7     stringr_1.4.0  
- [9] tools_4.0.2     xfun_0.17       git2r_0.27.1    htmltools_0.5.0
-[13] ellipsis_0.3.1  yaml_2.2.1      digest_0.6.25   rprojroot_1.3-2
-[17] tibble_3.0.3    lifecycle_0.2.0 crayon_1.3.4    later_1.1.0.1  
-[21] vctrs_0.3.4     fs_1.5.0        promises_1.1.1  glue_1.4.2     
-[25] evaluate_0.14   rmarkdown_2.3   stringi_1.5.3   compiler_4.0.2 
-[29] pillar_1.4.6    backports_1.1.9 httpuv_1.5.4    pkgconfig_2.0.3</code></pre>
+ [1] Rcpp_1.0.5      rstudioapi_0.11 whisker_0.4     knitr_1.29     
+ [5] magrittr_1.5    workflowr_1.6.2 R6_2.4.1        rlang_0.4.7    
+ [9] stringr_1.4.0   tools_4.0.2     xfun_0.17       git2r_0.27.1   
+[13] htmltools_0.5.0 ellipsis_0.3.1  yaml_2.2.1      digest_0.6.25  
+[17] rprojroot_1.3-2 tibble_3.0.3    lifecycle_0.2.0 crayon_1.3.4   
+[21] later_1.1.0.1   vctrs_0.3.4     fs_1.5.0        promises_1.1.1 
+[25] glue_1.4.2      evaluate_0.14   rmarkdown_2.3   stringi_1.5.3  
+[29] compiler_4.0.2  pillar_1.4.6    backports_1.1.9 httpuv_1.5.4   
+[33] pkgconfig_2.0.3</code></pre>
 </div>
 </div>
 

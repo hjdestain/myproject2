@@ -1,7 +1,7 @@
-name: "myproject2"
+name: myproject2
 output_dir: ../docs
 navbar:
-  title: "myproject2"
+  title: myproject2
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/hjdestain/myproject2
 output:
   workflowr::wflow_html:
     toc: yes
